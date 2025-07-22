@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+<script> if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js');
+        }   </script> 
+<link rel="manifest" href="manifest.json" />    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>FitGuide</h1>
+		
+		<ul>
+			<li><a href="index.html">Главная страница</a></li>
+			<li><a href="IBM.html">Расчет ИМТ</a></li>
+			<li><a href="cikl.html">Тренировочный план</a></li>
+			<li><a href="rekomposition.html">Рекомпозиция тела</a></li>
+			<li><a href="profile.html">Профиль</a></li>
+		</ul>
+    </header>
+	
+	<div class="container">
+	
+		<p><strong>FitGuide</strong> — это онлайн-инструмент для тех, кто хочет улучшить своё здоровье, контролировать вес и строить эффективные тренировки.</p>
+
+		<p>Сайт помогает пользователям:</p>
+
+		<ul>
+		  <li>Рассчитать индекс массы тела (<strong>ИМТ</strong>),</li>
+		  <li>Определить диапазон <strong>идеального веса</strong>,</li>
+		  <li>Спланировать питание под рекомпозицию тела</li>
+		  <li>Получить программу тренировок жимовой цикл</li>
+		</ul>
+		
+	</div>
+	
+	<div class="func">
+		<div class="IMB">
+			<h2>Расчёт ИМТ</h2>
+			
+			<ul>
+				<li>Введите свой рост и вес</li>
+				<li>Получите значение ИМТ</li>
+				<li>Автоматическая интерпретация: <strong>недостаток</strong>, <strong>норма</strong>, <strong>избыток</strong></li>
+			</ul>
+		</div>
+		
+		<div class="recomp">
+			<h2>Подбор БЖУ для рекомпозиции</h2>
+			
+			<ul>
+				<li>Введите свой вес</li>
+				<li>Данные по белкам, жирам и углеводам </li>
+			</ul>
+		</div>
+		
+		<div class="cikl">
+			<h2>Генерация жимового цикла</h2>
+			
+			<ul>
+				<li>Введите свой текущий максимум</li>
+				<li>Получите план тренировок на 9 недель</li>
+				<li>Подробная таблица нагрузок (в процентах от максимума)</li>
+			</ul>
+		</div>
+	</div>
+	
+	
+	
+</body>
+</html>		
